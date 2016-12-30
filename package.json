@@ -8,6 +8,7 @@
     "express": "*",
     "express-handlebars": "*",
     "express-validator": "*",
+    "mongodb": "^2.1.16",
   },
   "engine": {
     "node": "*",
