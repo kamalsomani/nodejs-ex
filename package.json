@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "An Simple Node CMS",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "KamalSomani@gmail.com",
   "license": "ISC",
   "dependencies": {
