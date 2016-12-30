@@ -1,0 +1,42 @@
+<h1 class="pageTitle">Contact Us </h1>
+
+<div class="flex">
+	<div class="postal">
+		<address>
+			<label>Home</label>
+			B-1103, Mont Vert Altesse,
+			near Union Bank, Sus Road,
+			Pashan, Pune - 411021.
+			Maharastra, India.
+
+		</address>
+	</div>
+	<div class="geomap">
+		<div id="map">Load Map</div>
+	</div>
+</div>
+<script>
+function initMap() {
+	console.log('Map INit..');
+  var myLatLng = {lat: 18.544911, lng: 73.782914};
+
+  // Create a map object and specify the DOM element for display.
+  var mapOptions = {
+		zoom : 12,
+		center : myLatLng //new google.maps.LatLng(myLatLng.lat, myLatLng.lng)
+	};
+
+	map = new google.maps.Map(document.getElementById('map'),mapOptions);
+
+  // Create a marker and set its position.
+  var marker = new google.maps.Marker({
+    map: map,
+    position: myLatLng,
+    title: 'Home'
+  });
+}
+
+
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi9URNxKmUO0rCBkXWJij0S6TiavoBmDY&callback=initMap"></script>
